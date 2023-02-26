@@ -1,0 +1,17 @@
+@font-face {
+  font-family: Imported;
+  src: local('StratosSkyeng'), local('StratosSkyeng'),
+    url('./assets/fonts/Stratos-Medium.woff2') format('woff2'),
+    url('./assets/fonts/Stratos-Medium.woff') format('woff');
+}
+
+#root {
+  font: 1.4em /1.3 normal imported, sans-serif;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+  font-family: 'StratosSkyeng', sans-serif;
+  cursor: pointer;
+}
