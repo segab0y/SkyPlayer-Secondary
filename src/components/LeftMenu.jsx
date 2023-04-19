@@ -1,10 +1,10 @@
-import { useState } from "react";
-import { CSSTransition } from "react-transition-group";
-import BurgerMenu from "./BurgerMenu";
-import BurgerMenuHorizontal from "./BurgerMenuHorizontal";
+import { useState } from 'react'
+import { CSSTransition } from 'react-transition-group'
+import BurgerMenu from './BurgerMenu'
+import BurgerMenuHorizontal from './BurgerMenuHorizontal'
 
 function LeftMenuItems() {
-  const [show, setShow] = useState(false);
+  const [show, setShow] = useState(false)
 
   return (
     <nav className="main__nav nav w-[244px] bg-[#181818] pt-5 pr-0 pb-5 pl-[36px]">
@@ -49,7 +49,7 @@ function LeftMenuItems() {
         </div>
       </CSSTransition>
     </nav>
-  );
+  )
 }
 
-export default LeftMenuItems;
+export default LeftMenuItems
