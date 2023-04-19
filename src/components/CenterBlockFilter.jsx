@@ -20,7 +20,7 @@ function CenterBlockFilter() {
         исполнителю
       </div>
       {visibleFilter === 'author' && (
-        <div className="filter__button absolute">Я фильтр по исполнителю</div>
+        <div className="filter__button absolute m-[115px]">исп</div>
       )}
 
       <div
@@ -30,9 +30,7 @@ function CenterBlockFilter() {
         году выпуска
       </div>
       {visibleFilter === 'year' && (
-        <div className="filter__button fixed m-[161px]">
-          Я фильтр по году выпуска
-        </div>
+        <div className="filter__button fixed m-[237px]">г в</div>
       )}
       <div
         onClick={() => toggleVisibleFilter('genre')}
@@ -41,9 +39,7 @@ function CenterBlockFilter() {
         жанру
       </div>
       {visibleFilter === 'genre' && (
-        <div className="filter__button absolute m-[282px]">
-          Я фильтр по жанру
-        </div>
+        <div className="filter__button absolute m-[333px]">жнр</div>
       )}
     </div>
   )
