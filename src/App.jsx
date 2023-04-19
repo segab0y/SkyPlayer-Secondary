@@ -1,8 +1,8 @@
-import BarContent from './components/BarContent'
-import CenterBlock from './components/CenterBlock'
-import LeftMenuItems from './components/LeftMenu'
-import SideBar from './components/SideBar'
-import './App.css'
+import BarContent from "./components/BarContent";
+import CenterBlock from "./components/CenterBlock";
+import LeftMenuItems from "./components/LeftMenu";
+import SideBar from "./components/SideBar";
+import "./App.css";
 
 function App() {
   return (
@@ -19,7 +19,7 @@ function App() {
         <footer className="footer" />
       </div>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
