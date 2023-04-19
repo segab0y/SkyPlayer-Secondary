@@ -1,11 +1,11 @@
-import { useState } from "react";
+import { useState } from 'react'
 
 function CenterBlockFilter() {
-  const [visibleFilter, setVisibleFilter] = useState(null);
+  const [visibleFilter, setVisibleFilter] = useState(null)
 
   const toggleVisibleFilter = (filter) => {
-    setVisibleFilter(visibleFilter === filter ? null : filter);
-  };
+    setVisibleFilter(visibleFilter === filter ? null : filter)
+  }
 
   return (
     <div className="centerblock__filter filter flex flex-row items-center mb-[51px]">
@@ -14,37 +14,39 @@ function CenterBlockFilter() {
       </div>
 
       <div
-        onClick={() => toggleVisibleFilter("author")}
+        onClick={() => toggleVisibleFilter('author')}
         className="filter__button button-author _btn-text not-italic text-SkyBase border border-solid border-[#FFFFFF] rounded-[60px] px-[20px] py-[6px] mr-[10px] hover:border-[#D9B6FF] hover:text-[#D9B6FF] hover:cursor-pointer active:border-[#AD61FF] active:text-[#AD61FF] active:cursor-pointer"
       >
         исполнителю
       </div>
-      {visibleFilter === "author" && (
+      {visibleFilter === 'author' && (
         <div className="filter__button absolute">Я фильтр по исполнителю</div>
       )}
 
       <div
-        onClick={() => toggleVisibleFilter("year")}
+        onClick={() => toggleVisibleFilter('year')}
         className="filter__button button-year _btn-text not-italic text-SkyBase border border-solid border-[#FFFFFF] rounded-[60px] px-[20px] py-[6px] mr-[10px] hover:border-[#D9B6FF] hover:text-[#D9B6FF] hover:cursor-pointer active:border-[#AD61FF] active:text-[#AD61FF] active:cursor-pointer"
       >
         году выпуска
       </div>
-      {visibleFilter === "year" && (
+      {visibleFilter === 'year' && (
         <div className="filter__button fixed m-[161px]">
           Я фильтр по году выпуска
         </div>
       )}
       <div
-        onClick={() => toggleVisibleFilter("genre")}
+        onClick={() => toggleVisibleFilter('genre')}
         className="filter__button button-genre _btn-text not-italic text-SkyBase border border-solid border-[#FFFFFF] rounded-[60px] px-[20px] py-[6px] hover:border-[#D9B6FF] hover:text-[#D9B6FF] hover:cursor-pointer active:border-[#AD61FF] active:text-[#AD61FF] active:cursor-pointer"
       >
         жанру
       </div>
-      {visibleFilter === "genre" && (
-        <div className="filter__button absolute m-[282px]">Я фильтр по жанру</div>
+      {visibleFilter === 'genre' && (
+        <div className="filter__button absolute m-[282px]">
+          Я фильтр по жанру
+        </div>
       )}
     </div>
-  );
+  )
 }
 
-export default CenterBlockFilter;
+export default CenterBlockFilter

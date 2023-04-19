@@ -5,7 +5,7 @@ function BurgerMenu() {
       <span className="burger__line inline-block h-full w-px bg-[#D3D3D3]" />
       <span className="burger__line inline-block h-full w-px bg-[#D3D3D3]" />
     </div>
-  );
+  )
 }
 
-export default BurgerMenu;
+export default BurgerMenu

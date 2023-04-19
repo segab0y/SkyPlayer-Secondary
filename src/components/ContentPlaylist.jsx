@@ -756,7 +756,7 @@ function ContentPlaylist() {
               href="http://www.google.com"
               className="track__album-link not-italic text-SkyBase text-[#696969]"
             >
-               .
+              .
             </a>
           </div>
           <div className="track__time flex ">
