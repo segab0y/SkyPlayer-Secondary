@@ -2,20 +2,59 @@
 @tailwind components;
 @tailwind utilities;
 
+.window__author-wrapper {
+  width: 237px;
+  height: 251px;
+
+  border: 1px solid white;
+
+  margin-top: 405px;
+  margin-left: 69px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  z-index: 1;
+
+  /* background-color: darkolivegreen; */
+}
+
+.window__year-wrapper {
+}
+
+.window__genre-wrapper {
+  width: 238px;
+  height: 234px;
+
+  border: 1px solid white;
+
+  margin-top: 607px;
+  margin-left: 148px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  z-index: 1;
+}
+
 .alert-enter {
-    opacity: 0;
-    transform: scale(0.6);
-  }
-  .alert-enter-active {
-    opacity: 1;
-    transform: translateX(0);
-    transition: opacity 100ms, transform 300ms;
-  }
-  .alert-exit {
-    opacity: 1;
-  }
-  .alert-exit-active {
-    opacity: 0;
-    transform: scale(1);
-    /* transition: opacity 300ms, transform 300ms; */
-  }
+  opacity: 0;
+  transform: scale(0.6);
+}
+.alert-enter-active {
+  opacity: 1;
+  transform: translateX(0);
+  transition: opacity 100ms, transform 300ms;
+}
+.alert-exit {
+  opacity: 1;
+}
+.alert-exit-active {
+  opacity: 0;
+  transform: scale(1);
+  /* transition: opacity 300ms, transform 300ms; */
+}
