@@ -21,9 +21,11 @@ function CenterBlockFilter() {
       </div>
       {visibleFilter === 'author' && (
         <div className="filter__button window__author-wrapper absolute m-[115px]">
-          <div>исп 1</div>
-          <div>исп 2</div>
-          <div>исп 3</div>
+          <div>Michael Jackson</div>
+          <div>Frank Sinatra</div>
+          <div>Calvin Harris</div>
+          <div>Zhu</div>
+          <div>Arctic Monkeys</div>
         </div>
       )}
 
@@ -34,9 +36,11 @@ function CenterBlockFilter() {
         году выпуска
       </div>
       {visibleFilter === 'year' && (
-        <div className="filter__button window__year-wrapper flex items-center justify-around fixed w-[319px] h-[62px] border border-solid border-[#FFFFFF] m-[237px] mt-[339px] ml-[69px]">
-          <div>Сначала новые</div>
-          <div>Сначала старые</div>
+        <div className="filter__button window__year-wrapper">
+          <input type="radio" name="someRadio" value="firstNew"></input>
+          <div>Более новые</div>
+          <input type="radio" name="someRadio" value="firstNew"></input>
+          <div>Более старые</div>
         </div>
       )}
       <div
@@ -47,9 +51,11 @@ function CenterBlockFilter() {
       </div>
       {visibleFilter === 'genre' && (
         <div className="filter__button window__genre-wrapper absolute m-[333px]">
-          <div>жанр 1</div>
-          <div>жанр 2</div>
-          <div>жанр 3</div>
+          <div>Рок</div>
+          <div>Хип-хоп</div>
+          <div>Поп-музыка</div>
+          <div>Техно</div>
+          <div>Инди</div>
         </div>
       )}
     </div>
