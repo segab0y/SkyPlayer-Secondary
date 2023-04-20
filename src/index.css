@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .window__author-wrapper {
-  width: 237px;
+  /* width: 237px;
   height: 251px;
 
   border: 1px solid white;
@@ -16,16 +16,46 @@
   justify-content: center;
   align-items: center;
 
-  z-index: 1;
+  z-index: 1; */
 
   /* background-color: darkolivegreen; */
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  padding: 34px;
+  gap: 10px;
+  position: absolute;
+
+  width: 248px;
+  height: 312px;
+
+  left: 330px;
+  top: 169px;
+
+  background: #313131;
+  border-radius: 12px;
 }
 
 .window__year-wrapper {
+  display: flex;
+  padding: 34px;
+  gap: 14px;
+
+  position: absolute;
+  width: 387px;
+  height: 88px;
+
+  margin-top: 138px;
+  margin-left: 91px;
+
+  background: #313131;
+  border-radius: 12px;
 }
 
 .window__genre-wrapper {
-  width: 238px;
+  /* width: 238px;
   height: 234px;
 
   border: 1px solid white;
@@ -38,7 +68,22 @@
   justify-content: center;
   align-items: center;
 
-  z-index: 1;
+  z-index: 1; */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 34px;
+  gap: 10px;
+  
+  position: absolute;
+  width: 248px;
+  height: 305px;
+
+  margin-left: 193px;
+  margin-top: 690px;
+  
+  background: #313131;
+  border-radius: 12px;
 }
 
 .alert-enter {
