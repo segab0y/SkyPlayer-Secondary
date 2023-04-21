@@ -21,11 +21,11 @@ function CenterBlockFilter() {
       </div>
       {visibleFilter === 'author' && (
         <div className="filter__button window__author-wrapper absolute m-[115px]">
-          <div>Michael Jackson</div>
-          <div>Frank Sinatra</div>
-          <div>Calvin Harris</div>
-          <div>Zhu</div>
-          <div>Arctic Monkeys</div>
+          <a href='http://google.com'>Michael Jackson</a>
+          <a href='http://google.com'>Frank Sinatra</a>
+          <a href='http://google.com'>Calvin Harris</a>
+          <a href='http://google.com'>Zhu</a>
+          <a href='http://google.com'>Arctic Monkeys</a>
         </div>
       )}
 
@@ -51,11 +51,11 @@ function CenterBlockFilter() {
       </div>
       {visibleFilter === 'genre' && (
         <div className="filter__button window__genre-wrapper absolute m-[333px]">
-          <div>Рок</div>
-          <div>Хип-хоп</div>
-          <div>Поп-музыка</div>
-          <div>Техно</div>
-          <div>Инди</div>
+          <a href='http://google.com'>Рок</a>
+          <a href='http://google.com'>Хип-хоп</a>
+          <a href='http://google.com'>Поп-музыка</a>
+          <a href='http://google.com'>Техно</a>
+          <a href='http://google.com'>Инди</a>
         </div>
       )}
     </div>
