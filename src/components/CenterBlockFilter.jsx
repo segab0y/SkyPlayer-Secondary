@@ -1,4 +1,7 @@
 import { useState } from 'react'
+import CenterBlockFilterByAuthor from './CenterBlockFilterByAuthor'
+import CenterBlockFilterByGenre from './CenterBlockFilterByGenre'
+import CenterBlockFilterByYear from './CenterBlockFilterByYear'
 
 function CenterBlockFilter() {
   const [visibleFilter, setVisibleFilter] = useState(null)
@@ -19,15 +22,7 @@ function CenterBlockFilter() {
       >
         исполнителю
       </div>
-      {visibleFilter === 'author' && (
-        <div className="filter__button window__author-wrapper absolute m-[115px]">
-          <a href='http://google.com'>Michael Jackson</a>
-          <a href='http://google.com'>Frank Sinatra</a>
-          <a href='http://google.com'>Calvin Harris</a>
-          <a href='http://google.com'>Zhu</a>
-          <a href='http://google.com'>Arctic Monkeys</a>
-        </div>
-      )}
+      {visibleFilter === 'author' && <CenterBlockFilterByAuthor />}
 
       <div
         onClick={() => toggleVisibleFilter('year')}
@@ -35,29 +30,14 @@ function CenterBlockFilter() {
       >
         году выпуска
       </div>
-      {visibleFilter === 'year' && (
-        <div className="filter__button window__year-wrapper">
-          <input type="radio" name="someRadio" value="firstNew"></input>
-          <div>Более новые</div>
-          <input type="radio" name="someRadio" value="firstNew"></input>
-          <div>Более старые</div>
-        </div>
-      )}
+      {visibleFilter === 'year' && <CenterBlockFilterByYear />}
       <div
         onClick={() => toggleVisibleFilter('genre')}
         className="filter__button button-genre _btn-text not-italic text-SkyBase border border-solid border-[#FFFFFF] rounded-[60px] px-[20px] py-[6px] hover:border-[#D9B6FF] hover:text-[#D9B6FF] hover:cursor-pointer active:border-[#AD61FF] active:text-[#AD61FF] active:cursor-pointer"
       >
         жанру
       </div>
-      {visibleFilter === 'genre' && (
-        <div className="filter__button window__genre-wrapper absolute m-[333px]">
-          <a href='http://google.com'>Рок</a>
-          <a href='http://google.com'>Хип-хоп</a>
-          <a href='http://google.com'>Поп-музыка</a>
-          <a href='http://google.com'>Техно</a>
-          <a href='http://google.com'>Инди</a>
-        </div>
-      )}
+      {visibleFilter === 'genre' && <CenterBlockFilterByGenre />}
     </div>
   )
 }
