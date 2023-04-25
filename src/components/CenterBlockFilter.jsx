@@ -22,7 +22,15 @@ function CenterBlockFilter() {
       >
         исполнителю
       </div>
-      {visibleFilter === 'author' && <CenterBlockFilterByAuthor />}
+      {visibleFilter === 'author' && (
+        <CenterBlockFilterByAuthor
+          authorMichaelJackson="Michael Jackson"
+          authorFrankSinatra="Frank Sinatra"
+          authorCalvinHarris="Calvin Harris"
+          authorZhu="Zhu"
+          authorArcticMonkeys="Arctic Monkeys"
+        />
+      )}
 
       <div
         onClick={() => toggleVisibleFilter('year')}
@@ -37,7 +45,15 @@ function CenterBlockFilter() {
       >
         жанру
       </div>
-      {visibleFilter === 'genre' && <CenterBlockFilterByGenre />}
+      {visibleFilter === 'genre' && (
+        <CenterBlockFilterByGenre
+          genreRock="Рок"
+          genreHipHop="Хип-хоп"
+          genrePopMusic="Поп-музыка"
+          genreTechno="Техно"
+          genreIndie="Инди"
+        />
+      )}
     </div>
   )
 }
