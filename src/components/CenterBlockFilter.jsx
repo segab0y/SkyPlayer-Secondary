@@ -4,10 +4,10 @@ import CenterBlockFilterByGenre from './CenterBlockFilterByGenre'
 import CenterBlockFilterByYear from './CenterBlockFilterByYear'
 
 function CenterBlockFilter() {
-  const [visibleFilter, setVisibleFilter] = useState(null)
+  const [visibleFilter, setVisibleFilter] = useState(false)
 
   const toggleVisibleFilter = (filter) => {
-    setVisibleFilter(visibleFilter === filter ? null : filter)
+    setVisibleFilter(visibleFilter === filter ? false : filter)
   }
 
   return (
