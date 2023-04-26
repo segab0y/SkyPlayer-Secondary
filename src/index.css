@@ -3,23 +3,6 @@
 @tailwind utilities;
 
 .window__author-wrapper {
-  /* width: 237px;
-  height: 251px;
-
-  border: 1px solid white;
-
-  margin-top: 405px;
-  margin-left: 69px;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
-  z-index: 1; */
-
-  /* background-color: darkolivegreen; */
-
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -29,7 +12,9 @@
   position: absolute;
 
   width: 248px;
-  height: 312px;
+  height: 19vh;
+
+  max-height: 19vh;
 
   left: 330px;
   top: 169px;
@@ -55,20 +40,6 @@
 }
 
 .window__genre-wrapper {
-  /* width: 238px;
-  height: 234px;
-
-  border: 1px solid white;
-
-  margin-top: 607px;
-  margin-left: 148px;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
-  z-index: 1; */
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -77,10 +48,12 @@
 
   position: absolute;
   width: 248px;
-  height: 305px;
+  height: 19vh;
 
-  margin-left: 193px;
-  margin-top: 690px;
+  max-height: 19vh;
+
+  margin-left: 150px;
+  margin-top: 626px;
 
   background: #313131;
   border-radius: 12px;
