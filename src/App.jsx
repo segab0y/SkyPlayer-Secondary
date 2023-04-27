@@ -3,6 +3,23 @@ import CenterBlock from './components/CenterBlock'
 import LeftMenuItems from './components/LeftMenu'
 import SideBar from './components/SideBar'
 import './App.css'
+// import axios from 'axios'
+// import ContentPlaylist from './components/ContentPlaylist'
+// import { useEffect } from 'react'
+
+// async function fetchTracks() {
+//   const response = await fetch(
+//     'https://painassasin.online/catalog/track/all/?format=api'
+//   )
+//   console.log(response)
+// }
+
+// {fetchTracks().map((fetchTracks) => <ContentPlaylist TrackAuthor={author} key={id} />}
+
+// console.log(fetchTracks)
+// useEffect(() => {
+//   fetchTracks()
+// }, [])
 
 function App() {
   return (
