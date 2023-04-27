@@ -1,5 +1,6 @@
 // import { useState } from 'react'
 
+import LoadingSquares from './PlaylistItems/LoadingSquares'
 import PlaylistItem01 from './PlaylistItems/PlaylistItem01'
 import PlaylistItem02 from './PlaylistItems/PlaylistItem02'
 import PlaylistItem03 from './PlaylistItems/PlaylistItem03'
@@ -34,6 +35,8 @@ function ContentPlaylist() {
         <PlaylistItem09 />
         <PlaylistItem10 />
         <PlaylistItem11 />
+        <LoadingSquares />
+        <LoadingSquares />
       </div>
       {console.log('finish loading')}
     </>
