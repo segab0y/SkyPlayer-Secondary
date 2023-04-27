@@ -2,6 +2,56 @@
 @tailwind components;
 @tailwind utilities;
 
+.loading__squares {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-bottom: 12px;
+}
+
+.loading__square {
+  position: relative;
+  width: 51px;
+  height: 51px;
+
+  background: #313131;
+}
+
+.loading__line1 {
+  position: relative;
+  width: 356px;
+  height: 19px;
+
+  /* left: 422px; */
+  /* top: 1084px; */
+
+  background: #313131;
+}
+
+.loading__line2 {
+  position: relative;
+  width: 271px;
+  height: 19px;
+
+  /* left: 839px; */
+  /* top: 1084px; */
+
+  background: #313131;
+}
+
+.loading__line3 {
+  position: relative;
+  width: 305px;
+  height: 19px;
+
+  /* left: 1165px; */
+  /* top: 1084px; */
+
+  background: #313131;
+}
+
 .window__author-wrapper {
   display: flex;
   flex-direction: column;
