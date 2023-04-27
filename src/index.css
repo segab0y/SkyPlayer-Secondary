@@ -16,6 +16,8 @@
 
   max-height: 19vh;
 
+  overflow: scroll;
+
   left: 330px;
   top: 169px;
 
@@ -51,6 +53,8 @@
   height: 19vh;
 
   max-height: 19vh;
+
+  overflow: scroll;
 
   margin-left: 150px;
   margin-top: 626px;
