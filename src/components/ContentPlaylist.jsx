@@ -1,4 +1,4 @@
-// import { useState } from 'react'
+import { useState } from 'react'
 
 import LoadingSquares from './PlaylistItems/LoadingSquares'
 import PlaylistItem01 from './PlaylistItems/PlaylistItem01'
@@ -14,14 +14,18 @@ import PlaylistItem10 from './PlaylistItems/PlaylistItem10'
 import PlaylistItem11 from './PlaylistItems/PlaylistItem11'
 
 function ContentPlaylist() {
-  // const [loading, setLoading] = useState(false)
+  const [loading, setLoading] = useState(false)
+
   setTimeout(() => {
-    // setLoading (false)
+    setLoading (true)
   }, 1000)
+
+// const visibleLoading = (loading) => {
+//   setLoading(loading ===)
+// }  
 
   return (
     <>
-      {/* {visibleLoading()} */}
       {console.log('start loading')}
       <div className="content__playlist playlist flex flex-col overflow-y-auto">
         <PlaylistItem01 />
@@ -35,18 +39,13 @@ function ContentPlaylist() {
         <PlaylistItem09 />
         <PlaylistItem10 />
         <PlaylistItem11 />
-        <LoadingSquares />
-        <LoadingSquares />
+        {loading && <LoadingSquares />}
+        {loading && <LoadingSquares />}
+        {loading && <LoadingSquares />}
       </div>
       {console.log('finish loading')}
     </>
   )
-
-  // const visibleLoading = () => {
-  //   setLoading(true)
-  //   setTimeout(() => console.log('hello'), 3000)
-  //   setLoading(false)
-  // }
 }
 
 export default ContentPlaylist
