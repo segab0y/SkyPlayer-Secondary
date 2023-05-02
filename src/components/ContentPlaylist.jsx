@@ -14,20 +14,27 @@ import PlaylistItem10 from './PlaylistItems/PlaylistItem10'
 import PlaylistItem11 from './PlaylistItems/PlaylistItem11'
 
 function ContentPlaylist() {
-  const [loading, setLoading] = useState(false)
+  const [loading, setLoading] = useState(true)
 
   setTimeout(() => {
-    setLoading (true)
-  }, 1000)
-
-// const visibleLoading = (loading) => {
-//   setLoading(loading ===)
-// }  
+    setLoading(false)
+  }, 5000)
 
   return (
     <>
       {console.log('start loading')}
       <div className="content__playlist playlist flex flex-col overflow-y-auto">
+        {loading && <LoadingSquares />}
+        {loading && <LoadingSquares />}
+        {loading && <LoadingSquares />}
+        {loading && <LoadingSquares />}
+        {loading && <LoadingSquares />}
+        {loading && <LoadingSquares />}
+        {loading && <LoadingSquares />}
+        {loading && <LoadingSquares />}
+        {loading && <LoadingSquares />}
+        {loading && <LoadingSquares />}
+        {loading && <LoadingSquares />}
         <PlaylistItem01 />
         <PlaylistItem02 />
         <PlaylistItem03 />
@@ -39,9 +46,6 @@ function ContentPlaylist() {
         <PlaylistItem09 />
         <PlaylistItem10 />
         <PlaylistItem11 />
-        {loading && <LoadingSquares />}
-        {loading && <LoadingSquares />}
-        {loading && <LoadingSquares />}
       </div>
       {console.log('finish loading')}
     </>

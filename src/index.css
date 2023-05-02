@@ -52,6 +52,38 @@
   background: #313131;
 }
 
+.loading-upper__line {
+  /* position: absolute; */
+  width: 59px;
+  height: 15px;
+
+  background: #313131;
+}
+
+.loading-lower__line {
+  /* position: absolute; */
+  width: 59px;
+  height: 15px;
+
+  background: #313131;
+}
+
+.loading-sidebar__square {
+  position: relative;
+  width: 250px;
+  height: 150px;
+
+  margin-bottom: 30px;
+
+  background: #313131;
+}
+
+.loading-track__square {
+  position: absolute;
+  width: 122px;
+  height: 51px;
+}
+
 .window__author-wrapper {
   display: flex;
   flex-direction: column;
