@@ -1,3 +1,7 @@
+import TrackPlayItem from './BarContentItems.jsx/TrackPlayItem'
+import TrackPlayLoading from './BarContentItems.jsx/TrackPlayLoading'
+
+
 function BarContent() {
   return (
     <div className="bar__content flex flex-col">
@@ -89,7 +93,10 @@ function BarContent() {
             </div>
           </div>
           <div className="player__track-play track-play flex flex-row">
-            <div
+            <TrackPlayItem />
+            <TrackPlayLoading />
+
+            {/* <div
               className="track-play__contain w-auto grid grid-flow-col items-center"
               style={{ gridTemplateAreas: `'image author' 'image album'` }}
             >
@@ -133,7 +140,7 @@ function BarContent() {
                   Баста
                 </a>
               </div>
-            </div>
+            </div> */}
             <div className="track-play__like-dis flex flex-row items-center ml-[26%]">
               <div className="track-play__like p-[5px] w-[14px] h-[12px] fill-transparent stroke-[#696969] _btn-icon hover:cursor-pointer hover:fill-transparent hover:stroke-[#ACACAC] active:cursor-pointer active:fill-transparent active:stroke-[#FFFFFF]">
                 <svg
