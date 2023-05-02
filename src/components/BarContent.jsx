@@ -1,8 +1,16 @@
+import { useState } from 'react'
 import TrackPlayItem from './BarContentItems.jsx/TrackPlayItem'
 import TrackPlayLoading from './BarContentItems.jsx/TrackPlayLoading'
 
 
 function BarContent() {
+
+  const [loading, setLoading] = useState(true)
+
+  setTimeout(() => {
+    setLoading(false)
+  }, 5000)
+
   return (
     <div className="bar__content flex flex-col">
       <div className="bar__player-progress w-full h-[5px] bg-[#2E2E2E]" />
@@ -94,7 +102,7 @@ function BarContent() {
           </div>
           <div className="player__track-play track-play flex flex-row">
             <TrackPlayItem />
-            <TrackPlayLoading />
+            {loading && <TrackPlayLoading />}
 
             {/* <div
               className="track-play__contain w-auto grid grid-flow-col items-center"
